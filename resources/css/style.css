@@ -330,7 +330,7 @@ footer {
 
 /* Mobile view */
 
-@media only screen and (max-width: 750px) {
+@media only screen and (min-width:200px) and (max-width: 770px) {
     .nav-links span {
         display: none;
     }
@@ -366,4 +366,46 @@ footer {
         align-items: center;
         padding-bottom: 2em;
     }
+    .info-left {
+        display: none;
+    }
+    .info-right {
+        width: 100%;
+        border-left: none;
+    }
+    .info-block{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .info-block .desktop-img {
+        display:none;
+    }
+    .info-block .mobile-img {
+        display: block;
+        width: 100%;
+        padding: 1em;
+    }
+    .thumbnail-text {
+        padding: 0 2em 1em;
+        width: auto;
+    }
+    .course-card img {
+        display: none;
+    }
+    .course-card p {
+        display: none;
+    }
+    .course-card {
+        /*display: flex;
+        justify-content: center; */
+        text-align: center;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
